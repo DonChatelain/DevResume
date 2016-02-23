@@ -25,7 +25,7 @@ header p {
 }
 
 .landing {
-	background-image: url(/img/towers.jpg);
+	background-image: url('./img/towers.jpg');
 	background-size: 160%;
 	background-repeat: no-repeat;
 	margin-top: 35px;
