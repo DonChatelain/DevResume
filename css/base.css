@@ -48,7 +48,7 @@ nav {
 	padding: 3px 100px 3px 0;
 }
 
-fieldset {
+form {
 	border: none;
 	margin: 10px auto;
 	text-align: center;
@@ -59,10 +59,12 @@ input, textarea {
 	margin-bottom: 10px;
 	max-width: 220px;
 	max-height: 75px;
+	color: #000;
 }
-button {
+input[type="submit"] {
 	background-color: #000;
 	border: 2px solid #fff;
 	width: 220px;
 	padding: 3px 0 3px 0;
+	color: #fff;
 }

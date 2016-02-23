@@ -41,19 +41,19 @@
 	<section class="hello">
 		<p>I am a</p>
 		<h3>Web Developer,</h3>
-		<h3>Interative Designer,</h3>
+		<h3>Interactive Designer,</h3>
 		<h3><span>and &nbsp;&nbsp; </span>Media Artist</h3>
 
-		<p>We could build something cool together</p>
-		<fieldset>
-			<input class="in-name" placeholder="Your Name"></input>
-			<input class="in-business" placeholder="Business Name"></input>
-			<input class="in-email" placeholder="Email"></input>
-			<input class="in-phone" placeholder="Phone"></input>
-			<input class="in-website" placeholder="Website"></input>
-			<textarea class="in-description" placeholder="A Brief Description of Your Project"></textarea>
-			<button class="contact-button">CONTACT</button>
-		</fieldset>
+		<p>We can build something cool together</p>
+		<form method="POST" action="./mail.php">
+			<input class="in-name" name="name" placeholder="Your Name"></input>
+			<input class="in-business" name="business" placeholder="Business Name"></input>
+			<input class="in-email" name="email" placeholder="Email"></input>
+			<input class="in-phone" name="phone" placeholder="Phone"></input>
+			<input class="in-website" name="website" placeholder="Website"></input>
+			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project"></textarea>
+			<input type="submit" name="send" class="contact-button" value="CONTACT">
+		</form>
 	</section>
 
 	<footer>
