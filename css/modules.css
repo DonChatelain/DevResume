@@ -1,7 +1,7 @@
-header p {
+.site-logo {
 	font-size: 23px;
 	position: fixed;
-	top: -20px;
+	top: 3px;
 	left: 20px;
 	color: #fff;
 	z-index: 2;
@@ -76,6 +76,10 @@ header p {
 	font-weight: 100;
 	position: relative;
 }
+.hello h3:first-child {
+	padding-top: 50px;
+}
+
 .hello h3 {
 	text-transform: uppercase;
 	text-indent: 40px;
@@ -85,7 +89,7 @@ header p {
 	color: #fff;
 	font-family: 'Lora', serif;
 	font-size: 14px;
-	text-indent: 20px;
+	text-align: center;
 }
 .hello span {
 	font-family: 'Lora', serif;
@@ -94,17 +98,51 @@ header p {
 	text-transform: lowercase;
 }
 
+.works {
+	margin-top: 70px;
+	padding: 10px;
+}
 
-
-footer {
-	height: 100px;
+.works p {
 	font-size: 12px;
-	padding: 5px;
-	line-height: 0.5;
 }
-.contact-footer {
-	float: left;
+
+.works p:nth-child(7) {
+	display: none;
 }
-.copyright-footer {
-	float: right;
+.more-info {
+	text-decoration: underline;
+	cursor: pointer;
 }
+
+.works p a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.taskTrapImg {
+	width: 280px;
+	padding: 0;
+}
+
+#mylightbox1 {
+	display: none;
+}
+.github {
+	color: #000;
+	background-color: #fff;
+	margin-top: 50px;
+	padding: 20px;
+}
+.github img, #gh-data h2 {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.repolist ul li a, #gh-data > h2 > span > a {
+	color: #000;
+	text-decoration: underline;
+}
+

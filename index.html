@@ -7,11 +7,11 @@
 	<link href="./css/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="./css/base.css" rel="stylesheet" type="text/css" />
 	<link href="./css/modules.css" rel="stylesheet" type="text/css" />
-	
+	<link href="./css/state.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<header>
-		<p class="site-logo">d/c</p>
+		<a href="./index.html" class="site-logo">d/c</a>
 		<nav>
 			<div class="ham-menu">
 				<div class="ham-1"></div>
@@ -21,9 +21,9 @@
 			</div>
 			<div class="menu-box">
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Works</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a class="nav-normal" href="#">About</a></li>
+					<li><a class="nav-normal" href="./pages/works.html">Works</a></li>
+					<li><a class="nav-normal" href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -31,7 +31,7 @@
 
 	<section class="landing">
 		<!-- <img src="/img/towers.jpg" /> -->
-		<p>When you boil it all down, it is our ability of expression and conveyance that solely stands between our loneliness and the interconnectedness of humanity entire.</p>
+		<p>When you boil it all down, it is our ability of <span class="boxed">expression</span> and <span class="boxed">conveyance</span> that solely stands between our loneliness and the interconnectedness of humanity entire.</p>
 		<h4>Let's establish some</h4>
 		<div class="communication-box">
 			<h3>communication</h3>
@@ -39,12 +39,12 @@
 	</section>
 
 	<section class="hello">
-		<p>I am a</p>
+
 		<h3>Web Developer,</h3>
 		<h3>Interactive Designer,</h3>
 		<h3><span>and &nbsp;&nbsp; </span>Media Artist</h3>
 
-		<p>We can build something cool together</p>
+		<p>Now let's build something monumental</p>
 		<form method="POST" action="./mail.php">
 			<input class="in-name" name="name" placeholder="Your Name"></input>
 			<input class="in-business" name="business" placeholder="Business Name"></input>

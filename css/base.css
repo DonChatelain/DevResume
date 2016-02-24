@@ -10,7 +10,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
 }
 
 nav {
@@ -40,14 +44,6 @@ nav {
 	margin: 0;
 }
 
-.menu-box ul li {
-	/*background-color: #fff;*/
-	border-bottom: 1px solid #fff;
-	direction: rtl;
-	text-indent: -82px;
-	padding: 3px 100px 3px 0;
-}
-
 form {
 	border: none;
 	margin: 10px auto;
@@ -61,10 +57,20 @@ input, textarea {
 	max-height: 75px;
 	color: #000;
 }
-input[type="submit"] {
-	background-color: #000;
-	border: 2px solid #fff;
-	width: 220px;
-	padding: 3px 0 3px 0;
-	color: #fff;
+
+footer {
+	height: 70px;
+	font-size: 12px;
+	padding: 5px;
+	line-height: 0.5;
+	display: inline-block;	
+	line-height: 0.2;
+	border-top: 1px solid #000;
+}
+.contact-footer {
+	float: left;
+}
+.copyright-footer {
+	float: right;
+	line-height: 0.2;
 }
