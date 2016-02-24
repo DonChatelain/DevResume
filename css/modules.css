@@ -15,6 +15,7 @@
 	position: fixed;
 	top: 7px;
 	right: 20px;
+	cursor: pointer;
 }
 .ham-1, .ham-2, .ham-3, .ham-4 {
 	width: 100%;
