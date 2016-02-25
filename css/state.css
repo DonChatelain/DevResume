@@ -1,3 +1,29 @@
+@keyframes slidy6 {
+	0% { left: 0%; }
+	13% { left: 0%; }
+	16% { left: -100%; }
+	29% { left: -100%; }
+	32% { left: -200%; }
+	45% { left: -200%; }
+	48% { left: -300%; }
+	61% { left: -300%; }
+	64% { left: -400%; }
+	77% { left: -400%; }
+	80% { left: -500%; }
+	100% { left: -500%; }
+}
+
+@keyframes slidy4 {
+	0% { left: 0%; }
+	22% { left: 0%; }
+	25% { left: -100%; }
+	47% { left: -100%; }
+	50% { left: -200%; }
+	72% { left: -200%; }
+	75% { left: -300%; }
+	100% { left: -300%; }
+}
+
 .contact-button {
 	background-color: #000;
 	border: 2px solid #fff;
@@ -41,4 +67,43 @@
 	color: #fff;
 	padding: 2px;
 	font-weight: 100;
+}
+
+.slider6, .slider4 { 
+	overflow: hidden; 
+}
+.slider6 figure img {
+	width: 16.66%; 
+	float: left; 
+}
+.slider6 figure { 
+  position: relative;
+  width: 600%;
+  height: 300px;
+  overflow: hidden;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s slidy6 infinite; 
+}
+
+.slider6 figure:hover, .slider4 figure:hover { 
+	animation-play-state:paused; 
+}
+
+.slider4 figure img {
+	width: 25%;
+	float: left;
+}
+.slider4 figure {
+	position: relative;
+	width: 400%;
+	height: ;
+	overflow: hidden;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 18s slidy4 infinite; 
 }

@@ -43,6 +43,7 @@
 	word-spacing: 2px;
 	letter-spacing: 3px;
 	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .landing h4 {
@@ -76,6 +77,7 @@
 	color: #fff;
 	font-weight: 100;
 	position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
 .hello h3:first-child {
 	padding-top: 50px;
@@ -100,15 +102,31 @@
 }
 
 .works {
-	margin-top: 70px;
+	margin-top: 20px;
 	padding: 10px;
 }
 
 .works p {
-	font-size: 12px;
+	font-size: 16px;
+	font-family: 'Lora';
+	padding: 5px;
 }
 
-.works p:nth-child(7) {
+.works h3 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.works h4 {
+	background-color: #000;
+	color: #fff;
+	width: 120%;
+	padding: 2px 0 2px 25px;
+	margin-left: -20px;
+	font-weight: normal;
+}
+
+.more-info + p {
 	display: none;
 }
 .more-info {
