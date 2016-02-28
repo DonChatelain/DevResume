@@ -26,16 +26,16 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 20;
 }
 
 .menu-box {
 	position: fixed;
 	top: 35px;
-	right: 0;
+	right: -20px;
 	background-color: #000;
 	color: #fff;
-	width: 100px;
+	width: 150px;
 	display: none;
 }
 .menu-box ul {
@@ -44,6 +44,7 @@ nav {
 	line-height: 1.7;
 	padding: 0 16px 0 0;
 	margin: 0;
+	font-size: 20px;
 }
 
 form {
@@ -61,19 +62,28 @@ input, textarea {
 }
 
 footer {
-	height: 70px;
-	font-size: 14px;
+	width: 100%;
+	height: 25px;
+	font-size: 12px;
+	text-align: center;
 	padding: 5px;
 	line-height: 0.5;
-	display: inline-block;	
+	display: inline-block;
 	line-height: 0.2;
 	border-top: 1px solid #000;
 	font-family: 'Montserrat', sans-serif;
 }
 .contact-footer {
-	float: left;
 }
 .copyright-footer {
-	float: right;
-	line-height: 0.2;
+
+}
+
+.social-icons {
+	text-align: center;
+
+}
+.social-icons img {
+	width: 15%;
+	padding: 5px;
 }

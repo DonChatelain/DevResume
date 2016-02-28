@@ -24,7 +24,14 @@ $(function() {
 		$('.more-info').on('click', function() {
 			$(this).next().toggle();
 		});
+
+		$('.communication-box, .scroll_down').on('click', function() {
+			$('html, body').animate({scrollTop: 450}, 800);
+		});
+
 	};
+
+
 
 	//=============================================  EXECUTIVES ===============================
 
