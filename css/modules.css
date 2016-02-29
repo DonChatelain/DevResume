@@ -4,7 +4,7 @@
 	top: 3px;
 	left: 20px;
 	color: #fff;
-	z-index: 2;
+	z-index: 21;
 	font-family: 'Lora', serif;
 }
 
@@ -30,14 +30,14 @@
 	background-size: 160%;
 	background-repeat: no-repeat;
 	margin-top: 35px;
-	height: 600px;
+	height: 517px;
 	position: relative;
 }
 
 .landing p {
 	text-transform: uppercase;
 	position: relative;
-	top: 100px;
+	top: 60px;
 	text-align: center;
 	padding: 10px;
 	word-spacing: 2px;
@@ -49,7 +49,7 @@
 .landing h4 {
 	font-family: 'Lora', serif;
 	position: relative;
-	top: 140px;
+	top: 100px;
 	text-align: center;
 	line-height: 0.20;
 }
@@ -60,14 +60,31 @@
 	color: #fff;
 	text-align: center;
 	padding-bottom: 5px;
+	cursor: pointer;
 }
 .communication-box {
 	display: block;
-	margin: 150px auto;
+	margin: 110px auto;
 	background-color: #000;
 	position: relative;
 	height: 45px;
 	width: 280px;
+}
+
+.scroll_down {
+  box-sizing: border-box;
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  text-align: center;
+  z-index: 10;
+  margin: -107px auto;
+  cursor: pointer;
+}
+.scroll_down p {
+  font-family: sans-serif;
+  color: white;
+  z-index: 10;
 }
 
 .hello {
@@ -101,6 +118,69 @@
 	text-transform: lowercase;
 }
 
+.about {
+	padding: 50px 10px 0 10px;
+
+}
+.about h3 {
+	font-family: 'Lora';
+	/*text-transform: uppercase;*/
+	font-weight: 100;
+	letter-spacing: 3px;
+	/*text-decoration: underline;*/
+	text-align: center;
+}
+.about p {
+	text-indent: 20px;
+	font-size: 16px;
+}
+
+.self-contain {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+	float: right;
+	z-index: 10;
+}
+.self-contain img {
+	display: inline;
+	margin: 0 auto;
+	width: auto;
+	height: 100%;
+
+}
+.about ul hr {
+	width: 60%;
+	margin-left: -25px;
+}
+.about ul {
+		list-style: square;
+}
+
+.principles {
+	padding-top: 40px;
+}
+.principles h3 {
+	font-weight: 100;
+	letter-spacing: 3px;
+	text-align: center;
+}
+.principles p {
+	padding: 10px;
+	text-indent: 15px;
+	/*font-family: 'Montserrat';*/
+}
+.principles ul {
+	margin-left: 0px;
+	font-weight: bold;
+}
+
 .works {
 	margin-top: 20px;
 	padding: 10px;
@@ -113,11 +193,15 @@
 }
 
 .works h3 {
+	font-family: 'Lora', serif;
+	/*text-transform: uppercase;*/
+	font-weight: 100;
+	letter-spacing: 3px;
+	/*text-decoration: underline;*/
 	text-align: center;
-	text-decoration: underline;
 }
 
-.works h4 {
+.works h4, .about h4 {
 	background-color: #000;
 	color: #fff;
 	width: 120%;
@@ -165,3 +249,14 @@
 	text-decoration: underline;
 }
 
+.contact {
+	padding-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+.contact h3 {
+	text-align: center;
+	font-family: 'Lora', serif;
+	/*text-transform: uppercase;*/
+	font-weight: 100;
+	letter-spacing: 3px;
+}
