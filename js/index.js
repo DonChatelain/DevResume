@@ -1,11 +1,42 @@
+var navOn = false;
 $(function() {
 
 	var buttonController = {};
 
 	buttonController.setListeners = function() {
+
+		// $('.ham-menu').on('click', function() {
+		// 	if (navOn) {
+		// 		$('.menu-box').animate({
+		// 			'right': '-=130px'
+		// 		}, 400);
+		// 		navOn = false;
+		// 	} else {
+		// 		$('.menu-box').animate({
+		// 			'right': '+=130px'
+		// 		}, 400);
+		// 		navOn = true;
+		// 	}
+		// });
+
 		$('.ham-menu').on('click', function() {
-			$('.menu-box').slideToggle();
+			if (navOn) {
+				$('.menu-box').removeClass('slideRight');
+				navOn = false;
+			} else {
+				$('.menu-box').addClass('slideRight');
+				navOn = true;
+			}
 		});
+
+		
+		$('section').on('click', function() {
+			if (navOn) {
+				$('.menu-box').removeClass('slideRight');
+				navOn = false;
+			}
+		});
+		
 
 		$('.menu-box ul a').hover(function() {
 			$(this).parents('li').addClass('button-highlight');

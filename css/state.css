@@ -1,87 +1,22 @@
-@keyframes slidy6 {
-	0% { left: 0%; }
-	13% { left: 0%; }
-	16% { left: -100%; }
-	29% { left: -100%; }
-	32% { left: -200%; }
-	45% { left: -200%; }
-	48% { left: -300%; }
-	61% { left: -300%; }
-	64% { left: -400%; }
-	77% { left: -400%; }
-	80% { left: -500%; }
-	100% { left: -500%; }
-}
 
-@keyframes slidy4 {
-	0% { left: 0%; }
-	22% { left: 0%; }
-	25% { left: -100%; }
-	47% { left: -100%; }
-	50% { left: -200%; }
-	72% { left: -200%; }
-	75% { left: -300%; }
-	100% { left: -300%; }
-}
-
-.contact-button {
-	background-color: #000;
-	border: 2px solid #fff;
-	width: 220px;
-	padding: 3px 0 3px 0;
-	color: #fff;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
+/* ========================================  HOVER EFFECTS ===================*/
 
 .button-highlight {
 	background-color: #fff;
 	color: #000;
 }
-
-.menu-box ul li {
-	border-bottom: 1px solid #fff;
-	direction: rtl;
-	text-indent: -82px;
-	padding: 8px 100px 8px 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	font-weight: 400;
-}
-
 .nav-normal {
 	color: #fff;
 }
-
 .nav-highlight {
 	color: #000;
 }
-
-.boxed {
-	background-color: #000;
-	color: #fff;
-	padding: 2px;
-	font-weight: 100;
+/*=====================================
+ NAV SLIDING*/
+.slideRight {
+	transform: translateX(-130px);
 }
 
-.self-contain img{
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 600ms ease;
-  -moz-transition: -webkit-filter 600ms ease;
-  -ms-transition: -webkit-filter 600ms ease;
-  -o-transition: -webkit-filter 600ms ease;
-  transition: -webkit-filter 600ms ease;
-}
 .self-contain img:hover {
 	-webkit-filter: grayscale(0%);
 	-moz-filter: grayscale(0%);
@@ -89,6 +24,8 @@
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
+
+/*=============================  SLIDERS  ===============================*/
 
 .slider6, .slider4 {
 	overflow: hidden;
@@ -127,4 +64,30 @@
 	text-align: left;
 	font-size: 0;
 	animation: 18s slidy4 infinite;
+}
+
+@keyframes slidy6 {
+	0% { left: 0%; }
+	13% { left: 0%; }
+	16% { left: -100%; }
+	29% { left: -100%; }
+	32% { left: -200%; }
+	45% { left: -200%; }
+	48% { left: -300%; }
+	61% { left: -300%; }
+	64% { left: -400%; }
+	77% { left: -400%; }
+	80% { left: -500%; }
+	100% { left: -500%; }
+}
+
+@keyframes slidy4 {
+	0% { left: 0%; }
+	22% { left: 0%; }
+	25% { left: -100%; }
+	47% { left: -100%; }
+	50% { left: -200%; }
+	72% { left: -200%; }
+	75% { left: -300%; }
+	100% { left: -300%; }
 }
