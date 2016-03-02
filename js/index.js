@@ -1,34 +1,34 @@
 var navOn = false;
 $(function() {
 
-	var buttonController = {};
+	var main = {};
 
-	buttonController.setListeners = function() {
+	main.setListeners = function() {
 
 		$('.ham-menu').on('click', function() {
 			if (navOn) {
-				$('.menu-box').removeClass('slideRight');
+				$('.menu-box ul li').removeClass('slideRight');
 				navOn = false;
 			} else {
-				$('.menu-box').addClass('slideRight');
+				$('.menu-box ul li').addClass('slideRight');
 				navOn = true;
 			}
 		});
 		
 		$('section').on('click', function() {
 			if (navOn) {
-				$('.menu-box').removeClass('slideRight');
+				$('.menu-box ul li').removeClass('slideRight');
 				navOn = false;
 			}
 		});
 		
 
-		$('.menu-box ul a').hover(function() {
-			$(this).parents('li').addClass('button-highlight');
-			$(this).addClass('nav-highlight');
+		$('.menu-box ul li').hover(function() {
+			$(this).addClass('button-highlight');
+			$(this).children().addClass('nav-highlight');
 		}, function() {
-			$(this).parents('li').removeClass('button-highlight');
-			$(this).removeClass('nav-highlight');
+			$(this).removeClass('button-highlight');
+			$(this).children().removeClass('nav-highlight');
 		});
 
 		$('.contact-button').hover(function() {
@@ -42,15 +42,18 @@ $(function() {
 		});
 
 		$('.communication-box, .scroll_down').on('click', function() {
-			$('html, body').animate({scrollTop: 400}, 800);
+			$('html, body').animate({scrollTop: 410}, 800);
 		});
 
 	};
 
+	main.validateForm = function() {
+
+	};
 
 
 	//=============================================  EXECUTIVES ===============================
 
-	buttonController.setListeners();
+	main.setListeners();
 
 });

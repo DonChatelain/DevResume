@@ -21,17 +21,17 @@
 			</div>
 			<div class="menu-box">
 				<ul class="navigation">
-					<li class="nav-item"><a class="nav-normal" href="./pages/about.html">About</a></li>
-					<li class="nav-item"><a class="nav-normal" href="./pages/works.html">Works</a></li>
-					<li class="nav-item"><a class="nav-normal" href="./pages/contact.html">Contact</a></li>
+					<li class="nav-item-1"><a class="nav-normal" href="./pages/about.html">About</a></li>
+					<li class="nav-item-2"><a class="nav-normal" href="./pages/works.html">Works</a></li>
+					<li class="nav-item-3"><a class="nav-normal" href="./pages/contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
-	<section class="landing">
+	<section class="landing first">
 		<aside></aside>
-		<p>When you  <br /> boil it all down, it is our ability of <span class="boxed">expression</span> and <span class="boxed">conveyance</span> that solely stands between our loneliness and the interconnectedness of humanity entire.</p>
+		<p>When you boil it all down, it is our ability of <span class="boxed">expression</span> and <span class="boxed">conveyance</span> that solely stands between our loneliness and the interconnectedness of humanity entire.</p>
 		<h5 class="centered">Let's establish some</h5>
 		<div class="communication-box">
 			<h2>communication</h2>
@@ -51,13 +51,14 @@
 		</div>
 
 		<p class="first">Now let's build something monumental</p>
+
 		<form method="POST" action="./mail.php" class="centered last">
-			<input class="in-name" name="name" placeholder="Your Name"></input>
-			<input class="in-business" name="business" placeholder="Business Name"></input>
-			<input class="in-email" name="email" placeholder="Email"></input>
-			<input class="in-phone" name="phone" placeholder="Phone"></input>
+			<input class="in-name" name="name" placeholder="Your Name (required)" required></input>
+			<input class="in-business" name="business" placeholder="Company Name"></input>
+			<input class="in-email" name="email" placeholder="Email (required)" required></input>
+			<input type="tel" class="in-phone" name="phone" placeholder="Phone"></input>
 			<input class="in-website" name="website" placeholder="Website"></input>
-			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project"></textarea>
+			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
 			<input type="submit" name="send" class="contact-button" value="CONTACT">
 		</form>
 	</section>

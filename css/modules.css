@@ -15,14 +15,14 @@
 	left: 0;
 	z-index: -1;
 	width: 100%;
-	height: 400px;
+	height: 600px;
 }
 .landing p {
 	text-transform: uppercase;
 	top: 60px;
 	margin-top: 60px;
 	text-align: center;
-	padding: 10px;
+	padding: 5%;
 	word-spacing: 2px;
 	letter-spacing: 3px;
 	line-height: 1.5;
@@ -109,7 +109,7 @@
 }
 .self-contain img {
 	display: inline;
-	margin: 0 auto;
+	margin: 0 -25px;
 	width: auto;
 	height: 100%;
 	-webkit-filter: grayscale(100%);
@@ -137,10 +137,6 @@
 	margin: 0 auto;
 	width: 260px;
 }
-.principles p {
-	margin: 0 auto;
-	width: 90%;
-}
 
 .more-info + p {
 	display: none;
@@ -149,6 +145,7 @@
 	text-decoration: underline;
 	cursor: pointer;
 }
+
 .works p a {
 	color: #000;
 	text-decoration: underline;

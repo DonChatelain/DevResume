@@ -2,7 +2,7 @@
 /* ========================================  HOVER EFFECTS ===================*/
 
 .button-highlight {
-	background-color: #fff;
+	background: #fff !important;
 	color: #000;
 }
 .nav-normal {
@@ -25,6 +25,8 @@
 	filter: grayscale(0%);
 }
 
+
+
 /*=============================  SLIDERS  ===============================*/
 
 .slider6, .slider4 {
@@ -37,7 +39,7 @@
 .slider6 figure {
   position: relative;
   width: 600%;
-  height: 300px;
+  max-height: 500px;
   overflow: hidden;
   margin: 0;
   left: 0;
@@ -57,7 +59,7 @@
 .slider4 figure {
 	position: relative;
 	width: 400%;
-	height: ;
+	height: auto;
 	overflow: hidden;
 	margin: 0;
 	left: 0;
@@ -90,4 +92,32 @@
 	72% { left: -200%; }
 	75% { left: -300%; }
 	100% { left: -300%; }
+}
+
+/*==============================  MEDIA RULES ++++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 480px) {
+
+	.landing aside {
+		background-size: 150%;
+	}
+	.landing p {
+		padding: 20%;
+	}
+	.slider6 figure img {
+		width: 14.66%;
+		padding: 0 1% 0 1%;
+		float: left;
+	}
+	.slider4 figure img {
+		width: 23%;
+		padding: 0 1% 0 1%;
+		float: left;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+
 }

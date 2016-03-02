@@ -9,7 +9,7 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 }
-section {
+section p {
 	padding: 10px;
 }
 h3 {
@@ -67,14 +67,8 @@ nav {
 	position: fixed;
 	top: 35px;
 	right: -150px;
-	background-color: #000;
 	color: #fff;
 	width: 150px;
-	-webkit-transition: transform 0.5s ;
-	-moz-transition: transform 0.5s ;
-	-ms-transition: transform 0.5s ;
-	-o-transition: transform 0.5s ;
-	transition: transform 0.5s ;
 }
 .menu-box ul {
 	list-style: none;
@@ -85,24 +79,36 @@ nav {
 	font-size: 20px;
 }
 .menu-box ul li {
+	background: #000;
 	border-bottom: 1px solid #fff;
 	direction: rtl;
 	text-indent: -70px;
 	padding: 8px 100px 8px 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
 	font-weight: 400;
 }
-.nav-item a {
+.nav-item-1 {
+	-webkit-transition: transform 400ms ease, background 0.4s linear;
+	-moz-transition: transform 400ms ease, background 0.4s linear;
+	-o-transition: transform 400ms ease, background 0.4s linear;
+	-ms-transition: transform 400ms ease, background 0.4s linear;
+	transition: transform 400ms ease, background 0.4s linear;
+}
+.nav-item-2 {
+	-webkit-transition: transform 450ms ease, background 0.4s linear;
+	-moz-transition: transform 450ms ease, background 0.4s linear;
+	-o-transition: transform 450ms ease, background 0.4s linear;
+	-ms-transition: transform 450ms ease, background 0.4s linear;
+	transition: transform 450ms ease, background 0.4s linear;
+}
+.nav-item-3 {
+	-webkit-transition: transform 500ms ease, background 0.4s linear;
+	-moz-transition: transform 500ms ease, background 0.4s linear;
+	-o-transition: transform 500ms ease, background 0.4s linear;
+	-ms-transition: transform 500ms ease, background 0.4s linear;
+	transition: transform 500ms ease, background 0.4s linear;
+}
+.menu-box ul li a {
 	text-decoration: none;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
 }
 
 /* ============================================= FORM  ============*/
