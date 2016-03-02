@@ -5,20 +5,6 @@ $(function() {
 
 	buttonController.setListeners = function() {
 
-		// $('.ham-menu').on('click', function() {
-		// 	if (navOn) {
-		// 		$('.menu-box').animate({
-		// 			'right': '-=130px'
-		// 		}, 400);
-		// 		navOn = false;
-		// 	} else {
-		// 		$('.menu-box').animate({
-		// 			'right': '+=130px'
-		// 		}, 400);
-		// 		navOn = true;
-		// 	}
-		// });
-
 		$('.ham-menu').on('click', function() {
 			if (navOn) {
 				$('.menu-box').removeClass('slideRight');
@@ -28,7 +14,6 @@ $(function() {
 				navOn = true;
 			}
 		});
-
 		
 		$('section').on('click', function() {
 			if (navOn) {
@@ -57,7 +42,7 @@ $(function() {
 		});
 
 		$('.communication-box, .scroll_down').on('click', function() {
-			$('html, body').animate({scrollTop: 450}, 800);
+			$('html, body').animate({scrollTop: 400}, 800);
 		});
 
 	};
