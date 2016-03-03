@@ -6,6 +6,7 @@ $(function() {
 	var requestURI = 'https://api.github.com/users/' + username;
 	var repoURI  = 'https://api.github.com/users/' + username + '/repos';
 
+
 	requestJSON(requestURI, function(json) {
 		if(json.message == "Not Found" || username == '') {
         	$('#gh-data').html("<h2>No User Info Found</h2>");

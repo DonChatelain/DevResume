@@ -20,21 +20,21 @@
 				<div class="ham-4"></div>
 			</div>
 			<div class="menu-box">
-				<ul>
-					<li><a class="nav-normal" href="./pages/about.html">About</a></li>
-					<li><a class="nav-normal" href="./pages/works.html">Works</a></li>
-					<li><a class="nav-normal" href="./pages/contact.html">Contact</a></li>
+				<ul class="navigation">
+					<li class="nav-item-1"><a class="nav-normal" href="./pages/about.html">About</a></li>
+					<li class="nav-item-2"><a class="nav-normal" href="./pages/works.html">Works</a></li>
+					<li class="nav-item-3"><a class="nav-normal" href="./pages/contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
-	<section class="landing">
-		<!-- <img src="/img/towers.jpg" /> -->
+	<section class="landing first">
+		<aside></aside>
 		<p>When you boil it all down, it is our ability of <span class="boxed">expression</span> and <span class="boxed">conveyance</span> that solely stands between our loneliness and the interconnectedness of humanity entire.</p>
-		<h4>Let's establish some</h4>
+		<h5 class="centered">Let's establish some</h5>
 		<div class="communication-box">
-			<h3>communication</h3>
+			<h2>communication</h2>
 		</div>
     <div class="scroll_down">
       <svg width="20px" height="10px" viewBox="0 0 20 10">
@@ -44,19 +44,21 @@
 	</section>
 
 	<section class="hello">
+		<div class="i-am-contain">
+			<h2>Web Developer,</h2>
+			<h2>Interactive Designer,</h2>
+			<h2><span>and &nbsp;&nbsp; </span>Media Artist</h2>
+		</div>
 
-		<h3>Web Developer,</h3>
-		<h3>Interactive Designer,</h3>
-		<h3><span>and &nbsp;&nbsp; </span>Media Artist</h3>
+		<p class="first">Now let's build something monumental</p>
 
-		<p>Now let's build something monumental</p>
-		<form method="POST" action="./mail.php">
-			<input class="in-name" name="name" placeholder="Your Name"></input>
-			<input class="in-business" name="business" placeholder="Business Name"></input>
-			<input class="in-email" name="email" placeholder="Email"></input>
-			<input class="in-phone" name="phone" placeholder="Phone"></input>
+		<form method="POST" action="./mail.php" class="centered last">
+			<input class="in-name" name="name" placeholder="Your Name (required)" required></input>
+			<input class="in-business" name="business" placeholder="Company Name"></input>
+			<input class="in-email" name="email" placeholder="Email (required)" required></input>
+			<input type="tel" class="in-phone" name="phone" placeholder="Phone"></input>
 			<input class="in-website" name="website" placeholder="Website"></input>
-			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project"></textarea>
+			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
 			<input type="submit" name="send" class="contact-button" value="CONTACT">
 		</form>
 	</section>
@@ -67,7 +69,7 @@
 			<p>djchatelain@gmail.com</p>
 			<p>702-738-5757</p> -->
 		</aside>
-		<aside class="copyright-footer">
+		<aside class="copyright-footer centered">
 			<p>&copy; 2016 &bull; DONCHATELAIN.ME</p>
 		</aside>
 	</footer>

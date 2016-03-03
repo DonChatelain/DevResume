@@ -2,7 +2,6 @@ html {
 	min-width: 300px;
 	overflow-x: hidden;
 }
-
 body {
 	font-size: 16px;
 	font-family: 'Lora', serif;
@@ -10,15 +9,25 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 }
-
-a {
-	text-decoration: none;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
+section p {
+	padding: 10px;
 }
+h3 {
+	letter-spacing: 3px;
+	text-align: center;
+	font-family: 'Lora', serif;
+	font-weight: 100;
+}
+h4{
+	background-color: #000;
+	color: #fff;
+	width: 120%;
+	padding: 2px 0 2px 25px;
+	margin-left: -20px;
+	font-weight: 100;
+}
+
+/* ===================================  TITLE NAV BAR ====================== */
 
 nav {
 	width: 100%;
@@ -27,17 +36,39 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 20;
+	z-index: 90;
 }
-
+.site-logo {
+	font-size: 23px;
+	position: fixed;
+	top: 3px;
+	left: 20px;
+	color: #fff;
+	z-index: 100;
+	text-decoration: none;
+}
+.ham-menu {
+	z-index: 100;
+	width: 25px;
+	height: 30px;
+	position: fixed;
+	top: 7px;
+	right: 20px;
+	cursor: pointer;
+}
+.ham-1, .ham-2, .ham-3, .ham-4 {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	border-radius: 3px;
+	margin-bottom: 4px;
+}
 .menu-box {
 	position: fixed;
 	top: 35px;
-	right: -20px;
-	background-color: #000;
+	right: -150px;
 	color: #fff;
 	width: 150px;
-	display: none;
 }
 .menu-box ul {
 	list-style: none;
@@ -47,44 +78,101 @@ nav {
 	margin: 0;
 	font-size: 20px;
 }
+.menu-box ul li {
+	background: #000;
+	border-bottom: 1px solid #fff;
+	direction: rtl;
+	text-indent: -70px;
+	padding: 8px 100px 8px 0;
+	font-weight: 400;
+}
+.nav-item-1 {
+	-webkit-transition: transform 400ms ease, background 0.4s linear;
+	-moz-transition: transform 400ms ease, background 0.4s linear;
+	-o-transition: transform 400ms ease, background 0.4s linear;
+	-ms-transition: transform 400ms ease, background 0.4s linear;
+	transition: transform 400ms ease, background 0.4s linear;
+}
+.nav-item-2 {
+	-webkit-transition: transform 450ms ease, background 0.4s linear;
+	-moz-transition: transform 450ms ease, background 0.4s linear;
+	-o-transition: transform 450ms ease, background 0.4s linear;
+	-ms-transition: transform 450ms ease, background 0.4s linear;
+	transition: transform 450ms ease, background 0.4s linear;
+}
+.nav-item-3 {
+	-webkit-transition: transform 500ms ease, background 0.4s linear;
+	-moz-transition: transform 500ms ease, background 0.4s linear;
+	-o-transition: transform 500ms ease, background 0.4s linear;
+	-ms-transition: transform 500ms ease, background 0.4s linear;
+	transition: transform 500ms ease, background 0.4s linear;
+}
+.menu-box ul li a {
+	text-decoration: none;
+}
+
+/* ============================================= FORM  ============*/
 
 form {
 	border: none;
 	margin: 10px auto;
-	text-align: center;
+	font-family: 'Montserrat';
 }
 input, textarea {
 	width: 220px;
 	padding-bottom: 5px;
-	margin-bottom: 10px;
-	max-width: 220px;
+	max-width: 226px;
 	max-height: 75px;
 	color: #000;
+	display: block;
+	margin: 10px auto;
 }
+.contact-button {
+	background-color: #000;
+	border: 2px solid #fff;
+	width: 226px;
+	padding: 3px 0 3px 0;
+	color: #fff;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+
+/* ========================================  FOOTER  ==================*/
 
 footer {
 	width: 100%;
 	height: 25px;
-	font-size: 12px;
-	text-align: center;
-	padding: 5px;
-	line-height: 0.5;
-	display: inline-block;
-	line-height: 0.2;
+	font-size: 0.75em;
+	padding: 0px 0 5px 0;
 	border-top: 1px solid #000;
 	font-family: 'Montserrat', sans-serif;
-}
-.contact-footer {
-}
-.copyright-footer {
-
+	line-height: 0.7;
 }
 
-.social-icons {
+/* ========================================   GENERAL CLASSES  ==============*/
+
+.centered {
 	text-align: center;
-
 }
-.social-icons img {
-	width: 15%;
-	padding: 5px;
+.indented {
+	text-indent: 20px;
+}
+.first {
+	padding-top: 40px;
+}
+.last {
+	padding-bottom: 30px;
+	margin-bottom: 0;
+}
+.bold {
+	font-weight: bold;
+}
+.boxed {
+	background-color: #000;
+	color: #fff;
+	padding: 0 1px 0 2px;
+	font-weight: 100;
 }

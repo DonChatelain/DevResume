@@ -1,3 +1,73 @@
+
+/* ========================================  HOVER EFFECTS ===================*/
+
+.button-highlight {
+	background: #fff !important;
+	color: #000;
+}
+.nav-normal {
+	color: #fff;
+}
+.nav-highlight {
+	color: #000;
+}
+/*=====================================
+ NAV SLIDING*/
+.slideRight {
+	transform: translateX(-130px);
+}
+
+.self-contain img:hover {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+
+
+/*=============================  SLIDERS  ===============================*/
+
+.slider6, .slider4 {
+	overflow: hidden;
+}
+.slider6 figure img {
+	width: 16.66%;
+	float: left;
+}
+.slider6 figure {
+  position: relative;
+  width: 600%;
+  max-height: 500px;
+  overflow: hidden;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s slidy6 infinite;
+}
+
+.slider6 figure:hover, .slider4 figure:hover {
+	animation-play-state:paused;
+}
+
+.slider4 figure img {
+	width: 25%;
+	float: left;
+}
+.slider4 figure {
+	position: relative;
+	width: 400%;
+	height: auto;
+	overflow: hidden;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 18s slidy4 infinite;
+}
+
 @keyframes slidy6 {
 	0% { left: 0%; }
 	13% { left: 0%; }
@@ -24,107 +94,30 @@
 	100% { left: -300%; }
 }
 
-.contact-button {
-	background-color: #000;
-	border: 2px solid #fff;
-	width: 220px;
-	padding: 3px 0 3px 0;
-	color: #fff;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
+/*==============================  MEDIA RULES ++++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 480px) {
+
+	.landing aside {
+		background-size: 150%;
+	}
+	.landing p {
+		padding: 20%;
+	}
+	.slider6 figure img {
+		width: 14.66%;
+		padding: 0 1% 0 1%;
+		float: left;
+	}
+	.slider4 figure img {
+		width: 23%;
+		padding: 0 1% 0 1%;
+		float: left;
+	}
 }
 
-.button-highlight {
-	background-color: #fff;
-	color: #000;
-}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-.menu-box ul li {
-	border-bottom: 1px solid #fff;
-	direction: rtl;
-	text-indent: -82px;
-	padding: 8px 100px 8px 0;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-	font-weight: 400;
-}
 
-.nav-normal {
-	color: #fff;
-}
 
-.nav-highlight {
-	color: #000;
-}
-
-.boxed {
-	background-color: #000;
-	color: #fff;
-	padding: 2px;
-	font-weight: 100;
-}
-
-.self-contain img{
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 600ms ease;
-  -moz-transition: -webkit-filter 600ms ease;
-  -ms-transition: -webkit-filter 600ms ease;
-  -o-transition: -webkit-filter 600ms ease;
-  transition: -webkit-filter 600ms ease;
-}
-.self-contain img:hover {
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	-ms-filter: grayscale(0%);
-	-o-filter: grayscale(0%);
-	filter: grayscale(0%);
-}
-
-.slider6, .slider4 {
-	overflow: hidden;
-}
-.slider6 figure img {
-	width: 16.66%;
-	float: left;
-}
-.slider6 figure {
-  position: relative;
-  width: 600%;
-  height: 300px;
-  overflow: hidden;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 25s slidy6 infinite;
-}
-
-.slider6 figure:hover, .slider4 figure:hover {
-	animation-play-state:paused;
-}
-
-.slider4 figure img {
-	width: 25%;
-	float: left;
-}
-.slider4 figure {
-	position: relative;
-	width: 400%;
-	height: ;
-	overflow: hidden;
-	margin: 0;
-	left: 0;
-	text-align: left;
-	font-size: 0;
-	animation: 18s slidy4 infinite;
 }

@@ -1,74 +1,47 @@
-.site-logo {
-	font-size: 23px;
-	position: fixed;
-	top: 3px;
-	left: 20px;
-	color: #fff;
-	z-index: 21;
-	font-family: 'Lora', serif;
-}
+/*=================================================  LANDING  =============*/
 
-.ham-menu {
-	z-index: 5;
-	width: 25px;
-	height: 30px;
-	position: fixed;
-	top: 7px;
-	right: 20px;
-	cursor: pointer;
-}
-.ham-1, .ham-2, .ham-3, .ham-4 {
-	width: 100%;
-	height: 2px;
-	background-color: #fff;
-	border-radius: 3px;
-	margin-bottom: 4px;
-}
-
-.landing {
+.landing aside {
 	background-image: url('../img/towers.jpg');
-	background-size: 160%;
+	background-size: 500px;
 	background-repeat: no-repeat;
-	margin-top: 35px;
-	height: 517px;
-	position: relative;
+	background-attachment: fixed;
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+	position: absolute;
+	top: 35px;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 600px;
 }
-
 .landing p {
 	text-transform: uppercase;
-	position: relative;
 	top: 60px;
+	margin-top: 60px;
 	text-align: center;
-	padding: 10px;
+	padding: 5%;
 	word-spacing: 2px;
 	letter-spacing: 3px;
 	line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
-}
 
-.landing h4 {
+}
+.landing h5 {
 	font-family: 'Lora', serif;
-	position: relative;
-	top: 100px;
-	text-align: center;
 	line-height: 0.20;
 }
-.communication-box h3 {
-	font-size: 36px;
+.communication-box h2 {
+	font-size: 2em;
 	font-weight: 100;
-	font-family: 'Lora', serif;
 	color: #fff;
-	text-align: center;
-	padding-bottom: 5px;
 	cursor: pointer;
-}
-.communication-box {
-	display: block;
-	margin: 110px auto;
-	background-color: #000;
-	position: relative;
-	height: 45px;
-	width: 280px;
+	background: #000;
+	width: 242px;
+	margin: -15px auto 0 auto;
+	padding: 0 0 0 8px;
 }
 
 .scroll_down {
@@ -78,7 +51,7 @@
   padding: 5px;
   text-align: center;
   z-index: 10;
-  margin: -107px auto;
+  margin: 0px auto;
   cursor: pointer;
 }
 .scroll_down p {
@@ -88,52 +61,38 @@
 }
 
 .hello {
-	margin-top: -90px;
 	background-color: #000;
-	height: 600px;
 	color: #fff;
-	font-weight: 100;
-	position: relative;
-	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	text-align: center;
+	margin: 0px 0 0 0;
+	padding: 20px 0 0 0;
 }
-.hello h3:first-child {
-	padding-top: 50px;
+.i-am-contain {
+	display: block;
+	margin: 0 auto;
+	width: 235px;
 }
 
-.hello h3 {
+.hello h2 {
+	font-size: 1.2em;
 	text-transform: uppercase;
-	text-indent: 40px;
+	text-indent: 0px;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
 }
 .hello p {
-	padding-top: 30px;
-	color: #fff;
-	font-family: 'Lora', serif;
-	font-size: 14px;
-	text-align: center;
+	font-size: 0.85em;
 }
 .hello span {
-	font-family: 'Lora', serif;
-	font-size: 14px;
-	text-indent: 20px;
+	font-size: 0.6em;
 	text-transform: lowercase;
 }
 
-.about {
-	padding: 50px 10px 0 10px;
-
-}
-.about h3 {
-	font-family: 'Lora';
-	/*text-transform: uppercase;*/
-	font-weight: 100;
-	letter-spacing: 3px;
-	/*text-decoration: underline;*/
-	text-align: center;
-}
-.about p {
-	text-indent: 20px;
-	font-size: 16px;
-}
+/* ======================================  ABOUT PAGE  ===========*/
 
 .self-contain {
 	width: 150px;
@@ -141,73 +100,42 @@
 	position: relative;
 	overflow: hidden;
 	-webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 	float: right;
 	z-index: 10;
 }
 .self-contain img {
 	display: inline;
-	margin: 0 auto;
+	margin: 0 -25px;
 	width: auto;
 	height: 100%;
-
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+ 	-webkit-transition: -webkit-filter 600ms ease;
+ 	-moz-transition: -webkit-filter 600ms ease;
+ 	-ms-transition: -webkit-filter 600ms ease;
+ 	-o-transition: -webkit-filter 600ms ease;
+ 	transition: -webkit-filter 600ms ease;
 }
 .about ul hr {
 	width: 60%;
 	margin-left: -25px;
 }
-.about ul {
-		list-style: square;
-}
 
-.principles {
-	padding-top: 40px;
-}
-.principles h3 {
-	font-weight: 100;
-	letter-spacing: 3px;
-	text-align: center;
-}
-.principles p {
-	padding: 10px;
-	text-indent: 15px;
-	/*font-family: 'Montserrat';*/
+/* =================================  WORKS PAGE ==============*/
+
+.principles  {
+	width: 100%;
 }
 .principles ul {
-	margin-left: 0px;
-	font-weight: bold;
-}
-
-.works {
-	margin-top: 20px;
-	padding: 10px;
-}
-
-.works p {
-	font-size: 16px;
-	font-family: 'Lora';
-	padding: 5px;
-}
-
-.works h3 {
-	font-family: 'Lora', serif;
-	/*text-transform: uppercase;*/
-	font-weight: 100;
-	letter-spacing: 3px;
-	/*text-decoration: underline;*/
-	text-align: center;
-}
-
-.works h4, .about h4 {
-	background-color: #000;
-	color: #fff;
-	width: 120%;
-	padding: 2px 0 2px 25px;
-	margin-left: -20px;
-	font-weight: normal;
+	margin: 0 auto;
+	width: 260px;
 }
 
 .more-info + p {
@@ -223,40 +151,30 @@
 	text-decoration: underline;
 }
 
-.taskTrapImg {
-	width: 280px;
-	padding: 0;
-}
-
-#mylightbox1 {
-	display: none;
-}
 .github {
-	color: #000;
-	background-color: #fff;
 	margin-top: 50px;
-	padding: 20px;
+	width: 100%;
 }
 .github img, #gh-data h2 {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 }
-
-
+#gh-data {
+	width: 250px;
+	margin: 0 auto;
+}
 .repolist ul li a, #gh-data > h2 > span > a {
 	color: #000;
-	text-decoration: underline;
 }
+
+/* ==================================================   CONTACT PAGE ==============*/
 
 .contact {
 	padding-top: 50px;
-	font-family: 'Montserrat', sans-serif;
 }
-.contact h3 {
-	text-align: center;
-	font-family: 'Lora', serif;
-	/*text-transform: uppercase;*/
-	font-weight: 100;
-	letter-spacing: 3px;
+.social-icons img {
+	width: 50px;
+	height: auto;
+	padding: 5px;
 }
