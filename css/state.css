@@ -1,5 +1,5 @@
 
-/* ========================================  HOVER EFFECTS ===================*/
+/* ========================================  HOVER and SLIDE EFFECTS ===================*/
 
 .button-highlight {
 	background: #fff !important;
@@ -24,8 +24,19 @@
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
-
-
+.contact-slide {
+	height: 110px;
+}
+.arrow-slide {
+	top: 100px;
+}
+.delayed {
+	-webkit-transition-delay: 300ms;
+	-moz-transition-delay: 300ms;
+	-ms-transition-delay: 300ms;
+	-o-transition-delay: 300ms;
+	transition-delay: 300ms;
+}
 
 /*=============================  SLIDERS  ===============================*/
 
@@ -141,7 +152,7 @@
 	.about p {
 		width: 55%;
 		float: left;
-		padding: 5px 5% 5% 5%;
+		padding: 5px 5px 5px 80px;
 	}
 	.about ul, .about h4 {
 		width: 25%;

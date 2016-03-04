@@ -1,4 +1,5 @@
 var navOn = false;
+var contactOn = false;
 $(function() {
 
 	var main = {};
@@ -45,11 +46,43 @@ $(function() {
 			$('html, body').animate({scrollTop: 410}, 800);
 		});
 
+//============================================================   Contact Extras ================
+
+		$('#phone-contact').on('click', function() {
+
+			if (contactOn) {
+				$('.contact-extras').removeClass('delayed');
+				$('.arrow-down').addClass('delayed');
+				$('.contact-extras').removeClass('contact-slide');
+				$('.arrow-down').removeClass('arrow-slide')
+				contactOn = false;
+
+				setTimeout(function() {
+					$('.contact-extras').html('');
+				}, 300);
+			} else {
+				$('.arrow-down').removeClass('delayed');
+				$('.contact-extras').addClass('delayed');
+				$('.arrow-down').addClass('arrow-slide');
+				$('.contact-extras').addClass('contact-slide');
+				contactOn = true;
+
+				setTimeout(function() {
+					$('.contact-extras').html('<p>Call or text: </p><address>(702) 738-5757</address><address>djchatelain@gmail.com</address>');
+				}, 300);
+			}
+			
+		});
+		
+
+
+
+		
+
+
+
 	};
 
-	main.validateForm = function() {
-
-	};
 
 
 	//=============================================  EXECUTIVES ===============================
