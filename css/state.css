@@ -114,10 +114,40 @@
 		padding: 0 1% 0 1%;
 		float: left;
 	}
+
+	.self-contain {
+		float: left;
+		margin: 10px;
+	}
+	.about hr {
+		width: 70%;
+		margin: 10px auto;
+	}
+	.about ul {
+		width: 40%;
+		margin: 10px auto 30px auto;
+	}
+	.about p {
+		padding: 10px 8% 10px 8%;
+	}
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) {
 
-
-
+	.self-contain {
+		width: 230px;
+		height: 230px;
+	}
+	.about p {
+		width: 55%;
+		float: left;
+		padding: 5px 5% 5% 5%;
+	}
+	.about ul, .about h4 {
+		width: 25%;
+		float: right;
+	}
+	footer {
+		clear: both;
+	}
 }
