@@ -29,32 +29,45 @@
     </nav>
   </header>
 
-  <section class="contact first">
-    <div class="social-icons centered">
+  <div class="content">
 
-    <div class="arrow-down"></div>
-      <img id="phone-contact" src="../img/contact.png" alt="" />
+    <section class="contact first">
+      <div class="social-icons centered">
 
-      <a href="https://www.linkedin.com/in/dj-chatelain-01325140"><img src="../img/linkedin.png" alt="" /></a>
-      <a href="https://github.com/DonChatelain"><img src="../img/github.png" alt="" /></a>
-      <a href="https://vimeo.com/user27051502"><img src="../img/vimeo.png" alt="" /></a>
-    </div>
+      <div class="arrow-down"></div>
+        <img id="phone-contact" src="../img/contact.png" alt="" />
 
-    <div class="contact-extras centered"></div>
+        <a class="hover-line" href="https://www.linkedin.com/in/dj-chatelain-01325140"><img src="../img/linkedin.png" alt="" /></a>
+        <a href="https://github.com/DonChatelain"><img src="../img/github.png" alt="" /></a>
+        <a href="https://vimeo.com/user27051502"><img src="../img/vimeo.png" alt="" /></a>
+      </div>
 
-    <h3>Say Hello</h3>
+      <div class="contact-extras centered"></div>
 
-    <form method="POST" action="../mail.php">
-      <input class="in-name" name="name" placeholder="Your Name (required)" required></input>
-      <input class="in-business" name="business" placeholder="Company Name"></input>
-      <input class="in-email" name="email" placeholder="Email (required)" required></input>
-      <input class="in-phone" name="phone" placeholder="Phone"></input>
-      <input class="in-website" name="website" placeholder="Website"></input>
-      <textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
-      <input type="submit" name="send" class="contact-button" value="CONTACT">
-    </form>
-    <br /><br /><br />
-  </section>
+      <h3>Say Hello</h3>
+
+      <form method="POST" action="../mail.php">
+        <input class="in-name" name="name" placeholder="Your Name (required)" required></input>
+        <input class="in-business" name="business" placeholder="Company Name"></input>
+        <input class="in-email" name="email" placeholder="Email (required)" required></input>
+        <input class="in-phone" name="phone" placeholder="Phone"></input>
+        <input class="in-website" name="website" placeholder="Website"></input>
+        <textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
+        <input type="submit" name="send" class="contact-button" value="CONTACT">
+      </form>
+      <br /><br /><br />
+    </section>
+
+    <section class="map">
+      <iframe
+        width="700"
+        height="250"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB4o7w2NCwCmJ3PnesV0z9HI36KwoBWw3Q&q=45.528769, -122.679446&zoom=13&maptype=satellite" allowfullscreen>
+      </iframe>
+    </section>
+
+  </div>
 
   <footer>
     <aside class="contact-footer">
@@ -66,7 +79,6 @@
       <p>&copy; 2016 &bull; DONCHATELAIN.ME</p>
     </aside>
   </footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="../js/index.js"></script>
 </body>

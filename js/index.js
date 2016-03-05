@@ -46,6 +46,14 @@ $(function() {
 			$('html, body').animate({scrollTop: 410}, 800);
 		});
 
+
+		$('.social-icons a').hover(function() {
+			$(this).addClass('hover-line');
+		}, function() {
+			$(this).removeClass('hover-line');
+		});
+
+
 //============================================================   Contact Extras ================
 
 		$('#phone-contact').on('click', function() {
