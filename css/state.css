@@ -14,7 +14,7 @@
 /*=====================================
  NAV SLIDING*/
 .slideRight {
-	transform: translateX(-130px);
+	transform: translateX(-180px);
 }
 
 .self-contain img:hover {
@@ -28,7 +28,7 @@
 	height: 110px;
 }
 .arrow-slide {
-	top: 100px;
+	top: 0;
 }
 .delayed {
 	-webkit-transition-delay: 300ms;
@@ -113,10 +113,12 @@
 		width: 450px;
 	}
 	.landing aside {
-		background-size: 150%;
+		background-size: cover;
 	}
 	.landing p {
-		padding: 20%;
+		padding: 5px;
+		width: 65%;
+		margin: 15% auto 10% auto;
 	}
 	.principles {
 		width: 65%;
@@ -166,14 +168,57 @@
 	h3 {
 		font-size: 1.6em;
 	}
-	h4 {
+	h4, h5 {
 		font-size: 1.3em;
 	}
 	section p {
 		font-size: 1.1em;
 	}
+	input {
+		height: 45px;
+		width: 350px;
+		font-size: 1.5em;
+	}
+	textarea {
+		width: 350px;
+		max-width: 350px;
+		height: 60px;
+		max-height: 200px;
+		font-size: 1.5em;
+	}
 
-
+	.landing p {
+		font-size: 1.3em;
+	}
+	.communication-box h2 {
+		font-size: 3em;
+		font-weight: 100;
+		color: #fff;
+		cursor: pointer;
+		background: #000;
+		width: 360px;
+		margin: -15px auto 0 auto;
+		padding: 0 0 0 8px;
+	}
+	.hello {
+		padding: 100px 0 0 0;
+	}
+	.i-am-contain {
+		display: inline;
+		width: 90%;
+		font-size: 1.2em;
+		margin: 0 auto;
+	}
+	.hello h2 {
+		display: inline;
+		text-align: center;
+		word-spacing: 3px;
+	}
+	.contact-button {
+		font-size: 1.6em;
+		box-sizing: border-box;
+		width: 350px;
+	}
 
 	.slider4 {
 		/*width: 800px;*/
@@ -188,14 +233,11 @@
 		padding: 5px 5px 5px 5px;
 	}
 	.about ul, .about h4 {
-		width: 25%;
+		width: 29%;
 		float: right;
 	}
 	.about ul {
 		font-size: 1.5em;
-	}
-	.contact input {
-		margin: 20px auto 20px auto;
 	}
 	.map {
 		display: block;
@@ -206,6 +248,15 @@
 }
 
 @media only screen and (min-width : 1000px) {  /*===================================*/
+
+	.landing p {
+		padding: 5px;
+		width: 50%;
+		margin: 15% auto 10% auto;
+	}
+	.i-am-contain {
+		font-size: 1.5em;
+	}
 
 	/*==================== WORKS ==============*/
 	.principles ul {

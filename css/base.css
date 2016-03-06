@@ -73,13 +73,13 @@ nav {
 .menu-box {
 	position: fixed;
 	top: 35px;
-	right: -150px;
+	right: -200px;
 	color: #fff;
-	width: 150px;
+	width: 200px;
 }
 .menu-box ul {
 	list-style: none;
-	text-align: right;
+	text-align: center;
 	line-height: 1.7;
 	padding: 0 16px 0 0;
 	margin: 0;
@@ -88,9 +88,7 @@ nav {
 .menu-box ul li {
 	background: #000;
 	border-bottom: 1px solid #fff;
-	direction: rtl;
-	text-indent: -70px;
-	padding: 8px 100px 8px 0;
+	padding: 10px 0 10px 0;
 	font-weight: 400;
 }
 .nav-item-1 {
@@ -101,18 +99,18 @@ nav {
 	transition: transform 400ms ease, background 0.4s linear;
 }
 .nav-item-2 {
-	-webkit-transition: transform 450ms ease, background 0.4s linear;
-	-moz-transition: transform 450ms ease, background 0.4s linear;
-	-o-transition: transform 450ms ease, background 0.4s linear;
-	-ms-transition: transform 450ms ease, background 0.4s linear;
-	transition: transform 450ms ease, background 0.4s linear;
-}
-.nav-item-3 {
 	-webkit-transition: transform 500ms ease, background 0.4s linear;
 	-moz-transition: transform 500ms ease, background 0.4s linear;
 	-o-transition: transform 500ms ease, background 0.4s linear;
 	-ms-transition: transform 500ms ease, background 0.4s linear;
 	transition: transform 500ms ease, background 0.4s linear;
+}
+.nav-item-3 {
+	-webkit-transition: transform 600ms ease, background 0.4s linear;
+	-moz-transition: transform 600ms ease, background 0.4s linear;
+	-o-transition: transform 600ms ease, background 0.4s linear;
+	-ms-transition: transform 600ms ease, background 0.4s linear;
+	transition: transform 600ms ease, background 0.4s linear;
 }
 .menu-box ul li a {
 	text-decoration: none;
@@ -128,18 +126,25 @@ form {
 input, textarea {
 	width: 220px;
 	padding-bottom: 5px;
-	max-width: 226px;
-	max-height: 100px;
+	max-height: 150px;
 	color: #000;
 	display: block;
-	margin: 10px auto;
+	margin: 15px auto;
+}
+textarea {
+	width: 218px;
+	max-width: 220px;
+	margin: 15px auto 50px auto;
+	/*border: 1px solid #fff;*/
 }
 .contact-button {
 	background-color: #000;
 	border: 2px solid #fff;
+	box-sizing: border-box;
 	width: 226px;
 	padding: 3px 0 3px 0;
 	color: #fff;
+	font-size: 1.3em;
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-ms-transition: background 0.5s linear;
@@ -157,6 +162,8 @@ footer {
 	border-top: 1px solid #000;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 0.7;
+	background: #000;
+	color: #fff;
 }
 
 /* ========================================   GENERAL CLASSES  ==============*/
@@ -177,9 +184,13 @@ footer {
 .bold {
 	font-weight: bold;
 }
+.hidden {
+	display: none;
+}
 .boxed {
 	background-color: #000;
 	color: #fff;
+	text-shadow: none;
 	padding: 0 1px 0 2px;
 	font-weight: 100;
 }

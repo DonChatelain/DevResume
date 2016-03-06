@@ -1,25 +1,19 @@
 /*=================================================  LANDING  =============*/
 
 .landing aside {
-	background-image: url('../img/towers.jpg');
-	background-size: 500px;
+	background-image: url('../img/com-mast-edit-1.jpg');
+	background-size: 570px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	-webkit-filter: blur(1px);
-	-moz-filter: blur(1px);
-	-ms-filter: blur(1px);
-	-o-filter: blur(1px);
-	filter: blur(1px);
 	position: absolute;
-	top: 35px;
-	left: 0;
+	background-position: 0 30px;
+	top: 0;
 	z-index: -1;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 }
 .landing p {
 	text-transform: uppercase;
-	top: 60px;
 	margin-top: 60px;
 	text-align: center;
 	padding: 5%;
@@ -27,7 +21,7 @@
 	letter-spacing: 3px;
 	line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
-
+	text-shadow: 1px 1px 3px #fff;
 }
 .landing h5 {
 	font-family: 'Lora', serif;
@@ -51,7 +45,7 @@
   padding: 5px;
   text-align: center;
   z-index: 10;
-  margin: 0px auto;
+  margin: 0px auto 25px auto;
   cursor: pointer;
 }
 .scroll_down p {
@@ -65,7 +59,7 @@
 	color: #fff;
 	width: 100%;
 	text-align: center;
-	margin: 0px 0 0 0;
+	margin: -5px 0 0 0;
 	padding: 20px 0 0 0;
 }
 .i-am-contain {
@@ -84,12 +78,8 @@
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 }
-.hello p {
-	font-size: 0.85em;
-}
-.hello span {
-	font-size: 0.6em;
-	text-transform: lowercase;
+.hello h5 {
+	font-weight: 100;
 }
 
 /* ======================================  ABOUT PAGE  ===========*/
@@ -138,9 +128,6 @@
 	width: 260px;
 }
 
-.more-info + p {
-	display: none;
-}
 .more-info {
 	text-decoration: underline;
 	cursor: pointer;
@@ -179,6 +166,10 @@
 	padding: 5px 10px 5px 10px;
 	cursor: pointer;
 }
+.phone-container {
+	display: inline;
+	position: relative;
+}
 .contact-extras {
 	-webkit-transition-property: height;
 	-moz-transition-property: height;
@@ -209,8 +200,7 @@
 	-webkit-transition: top 300ms ease;
 	position: absolute;
 	display: inline;
-	width: 30px;
-	top: 80px;
+	top: -20px;
 	margin-left: 14px;
 	width: 0; 
 	height: 0; 
@@ -222,5 +212,5 @@
 .map {
 	display: none;
 	text-align: center;
-	margin: -50px auto 50px auto;
+	margin: -30px auto 0 auto;
 }
