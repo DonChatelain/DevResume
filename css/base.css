@@ -31,19 +31,12 @@ h4{
 	margin-left: -20px;
 	font-weight: 100;
 	font-family: 'Montserrat';
+	font-weight: bold;
 }
 address {
 	font-style: normal;
 }
 
-/*.content {
-	background: #fff;
-	padding: 0;
-}
-.content-works {
-	background: #fff;
-	padding: 0;
-}*/
 
 /* ===================================  TITLE NAV BAR ====================== */
 
@@ -181,6 +174,7 @@ footer {
 	line-height: 0.7;
 	background: #000;
 	color: #fff;
+	clear: both;
 }
 
 /* ========================================   GENERAL CLASSES  ==============*/
@@ -211,7 +205,7 @@ footer {
 	padding: 0 1px 0 2px;
 	font-weight: 100;
 }
-.content, .content-works {
+.content {
 	margin: 0 auto -50px auto;
 	width: 100%;
 	min-height: 100%;
@@ -222,7 +216,7 @@ footer {
 	background: #000;
 	z-index: 50;
 	margin-top: -50px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding-bottom: 150px;
 
 }

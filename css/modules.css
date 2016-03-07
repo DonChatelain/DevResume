@@ -120,12 +120,44 @@
 
 /* =================================  WORKS PAGE ==============*/
 
+.head-img {
+	background: url("../img/com-mast-2-edit.jpg");
+	width: 100%;
+	height: 150px;
+	margin-top: 32px;
+	background-size: cover;
+	/*position: relative;*/
+	-webkit-filter: blur(3px);
+	border-bottom: 3px solid #000;
+}
+.head-img-wrapper {
+	position: relative;
+}
+.head-img-wrapper h2 {
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+	font-family: 'Montserrat';
+	text-align: center;
+	position: absolute;
+	top: 33%;
+	width: 100%;
+	font-size: 1.7em;
+}
+.works-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+.works-flex-left, .works-flex-right {
+	padding: 10px;
+	background: #fff;
+	width: 100%;
+}
+
 .principles  {
 	width: 100%;
 }
 .principles ul {
 	margin: 0 auto;
-	width: 260px;
 }
 
 .more-info {

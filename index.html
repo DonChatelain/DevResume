@@ -2,7 +2,7 @@
 <head>
 	<title>Don Chatelain | Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link href='https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700|Muli:400,300' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/ >
 	<link href="./css/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="./css/base.css" rel="stylesheet" type="text/css" />
@@ -53,21 +53,22 @@
 		<h5 class="first">Now let's build something monumental</h5>
 
 		<form method="POST" action="./mail.php" class="centered last">
-			<input class="in-name" name="name" placeholder="Your Name (required)" required></input>
+			<input class="in-name" name="name" placeholder="Your Name*" required></input>
 			<input class="in-business" name="business" placeholder="Company Name"></input>
-			<input class="in-email" name="email" placeholder="Email (required)" required></input>
+			<input class="in-email" name="email" placeholder="Email*" required></input>
 			<input type="tel" class="in-phone" name="phone" placeholder="Phone"></input>
 			<input class="in-website" name="website" placeholder="Website"></input>
-			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
+			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project*" required></textarea>
+			<p>* Required Field</p>
 			<input type="submit" name="send" class="contact-button" value="CONTACT">
 		</form>
 	</section>
 
 	<div class="popup-wrapper last">
-		<div class="popup-left">
+		<div class="popup-left popOut">
 			<a href="./pages/works.html">Portfolio</a>
 		</div>
-		<div class="popup-right">
+		<div class="popup-right popOut">
 			<a href="./pages/about.html">About Me</a>
 		</div>
 	</div>

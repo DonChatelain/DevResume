@@ -127,11 +127,8 @@
 /*==============================  MEDIA RULES ++++++++++++++++++++++++++++++ */
 
 @media only screen and (min-width: 480px) {
-	.content, .content-works {
+	.content {
 		width: 450px;
-	}
-	.content-works {
-		padding: 0 12% 0 5%;
 	}
 	.landing aside {
 
@@ -141,9 +138,24 @@
 		width: 65%;
 		margin: 15% auto 10% auto;
 	}
+	.i-am-contain {
+		font-size: 1.2em;
+	}
+	.popup-wrapper {
+		font-size: 1.5em;
+	}
+	.head-img {
+		height: 200px;
+	}
+	.head-img-wrapper h2 {
+		font-size: 2em;
+	}
 	.principles {
 		width: 65%;
 		margin: 0 auto;
+	}
+	.works p {
+		padding: 0 5%;
 	}
 	.slider6 {
 		width: 500px;
@@ -183,12 +195,8 @@
 @media only screen and (min-width : 768px) {  /*===================================*/
 
 	.content {
-		width: 780px;
+		width: 720px;
 		padding: 0 50px;
-	}
-	.content-works {
-		width: 80%;
-		padding: 0 50px 60% 50px;
 	}
 	h3 {
 		font-size: 1.6em;
@@ -242,9 +250,19 @@
 		word-spacing: 3px;
 	}
 	.contact-button {
-		font-size: 1.6em;
-		
-		width: 350px;
+		font-size: 1.4em;
+		width: 161px;
+   		height: 62px;
+	}
+	.popup-wrapper {
+		font-size: 1.7em;
+	}
+	.highlight {
+	padding: 12px 60px;
+	}
+
+	.works p {
+		padding: 0 15%;
 	}
 
 	.slider4 {
@@ -289,21 +307,36 @@
 	}
 
 	/*==================== WORKS ==============*/
-	.principles ul {
-		font-size: 1.1em;
+
+	.head-img {
+		height: 250px;
 	}
-	.principles {
-		width: 40%;
-		float: right;
+	.works-wrapper {
+		width: 85%;
 	}
-	.works {
-		width: 51%;
+	.works-flex-left {
+		width: 65%;
 		float: left;
 	}
-	.github {
-		width: 40%;
+	.works-flex-right {
+		width: 30%;
+		padding: 0 10px 0 0;
 		float: right;
-		margin-top: -320px;
+	}
+
+	.principles {
+		/*width: 30%;*/
+		/*float: right;*/
+	}
+	.works {
+		/*width: 60%;*/
+		/*float: left;*/
+	}
+
+	.github {
+		/*width: 30%;*/
+		/*float: right;*/
+
 	}
 	.slider6 figure img {
 

@@ -57,11 +57,24 @@ $(function() {
 //================  PopUP LINKS  ===============
 
 
+		function getScrollTop(){
+	        if(typeof pageYOffset!= 'undefined'){
+	          return pageYOffset;
+	        } else{
+	          var b = document.body; //IE 'quirks'
+	          var d = document.documentElement; //IE with doctype
+	          d = (d.clientHeight)? d : b;
+	          return d.scrollTop;
+	        }
+	    }    
+
+
+
 	
-        $('.popup-left, .popup-right').addClass('popOut');
+        
 
     		
-		
+
 
 
 
@@ -76,11 +89,11 @@ $(function() {
 
 
 //=========== LANDING PAGE SCROLL DOWN EVENT  ==============
-		$('.communication-box, .scroll_down').on('click', function() {
-			$('body, html').css('height', 'auto');
-			$('body').animate({scrollTop: 610}, 800);
+		// $('.communication-box, .scroll_down').on('click', function() {
+		// 	$('body, html').css('height', 'auto');
+		// 	$('body').animate({scrollTop: 610}, 800);
 			
-		});
+		// });
 //===========  SOCIAL ICON HOVER  ==============
 		$('.social-icons a').hover(function() {
 			$(this).addClass('hover-line');
