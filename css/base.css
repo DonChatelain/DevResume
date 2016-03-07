@@ -2,6 +2,7 @@ html {
 	min-width: 300px;
 	overflow-x: hidden;
 	height: 100%;
+	background: #eee;
 }
 body {
 	font-size: 16px;
@@ -22,7 +23,9 @@ h3 {
 }
 h4{
 	/*background-color: #000;*/
+	text-transform: uppercase;
 	color: #000;
+	/*display: inline;*/
 	width: 100%;
 	padding: 2px 0 2px 25px;
 	margin-left: -20px;
@@ -33,6 +36,14 @@ address {
 	font-style: normal;
 }
 
+/*.content {
+	background: #fff;
+	padding: 0;
+}
+.content-works {
+	background: #fff;
+	padding: 0;
+}*/
 
 /* ===================================  TITLE NAV BAR ====================== */
 
@@ -83,11 +94,12 @@ nav {
 	line-height: 1.7;
 	padding: 0 16px 0 0;
 	margin: 0;
-	font-size: 20px;
+	font-size: 1.5em;
 }
 .menu-box ul li {
 	background: #000;
 	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
 	padding: 10px 0 10px 0;
 	font-weight: 400;
 }
@@ -114,6 +126,8 @@ nav {
 }
 .menu-box ul li a {
 	text-decoration: none;
+	padding: 16px 50px;
+	text-align: center;
 }
 
 /* ============================================= FORM  ============*/
@@ -134,17 +148,20 @@ input, textarea {
 textarea {
 	width: 218px;
 	max-width: 220px;
-	margin: 15px auto 50px auto;
-	/*border: 1px solid #fff;*/
+	margin: 15px auto;
 }
 .contact-button {
-	background-color: #000;
-	border: 2px solid #fff;
+/*	font-family: 'Lora', serif;*/
+	background-color: #383838;
+	border: 2px solid #484848;
 	box-sizing: border-box;
-	width: 226px;
-	padding: 3px 0 3px 0;
+	width: 135px;
+	padding: 15px 10px;
 	color: #fff;
-	font-size: 1.3em;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	font-weight: bold;
+	/*text-decoration: underline;	*/
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-ms-transition: background 0.5s linear;
@@ -198,22 +215,37 @@ footer {
 	margin: 0 auto -50px auto;
 	width: 100%;
 	min-height: 100%;
+	background: #fff;
 }
 
-.hover-line {
-	display: inline-block;
-	backface-visibility: hidden;
-	position: relative;
-}
-.hover-line::before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 16%;
-	bottom: 0;
+.popup-wrapper {
 	background: #000;
-	height: 4px;
-	width: 48px;
-	-webkit-transition-property: left, right;
-	-webkit-transition-duration: 300ms;
+	z-index: 50;
+	margin-top: -50px;
+	font-size: 1.5em;
+	padding-bottom: 150px;
+
+}
+.popup-left, .popup-right {
+	display: inline;
+	position: relative;
+	background: #000;
+	padding: 12px 20px;
+	border: 1px solid #fff;
+	top: 10px;
+}
+.popup-left {
+	float: left;
+	left: -135px;
+	-webkit-transition: left 400ms ease, background 500ms ease, padding 600ms ease;
+}
+.popup-right {
+	float: right;
+	left: 135px;
+	-webkit-transition: left 600ms ease, background 500ms ease, padding 600ms ease;
+}
+.popup-left a, .popup-right a {
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: color 100ms ease;
 }

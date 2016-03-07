@@ -40,10 +40,10 @@ $(function() {
 		});
 //===========  NAV ITEM HOVER  ==============
 		$('.menu-box ul li').hover(function() {
-			$(this).addClass('button-highlight');
+			$(this).addClass('nav-highlight-bg');
 			$(this).children().addClass('nav-highlight');
 		}, function() {
-			$(this).removeClass('button-highlight');
+			$(this).removeClass('nav-highlight-bg');
 			$(this).children().removeClass('nav-highlight');
 		});
 //===========  FORM BUTTON HOVER  ==============
@@ -52,6 +52,29 @@ $(function() {
 		}, function() {
 			$(this).removeClass('button-highlight');
 		});
+
+
+//================  PopUP LINKS  ===============
+
+
+	
+        $('.popup-left, .popup-right').addClass('popOut');
+
+    		
+		
+
+
+
+		$('.popup-wrapper div').hover(function() {
+			$(this).addClass('highlight');
+			$(this).children().addClass('highlight-text');
+		}, function() {
+			$(this).removeClass('highlight');
+			$(this).children().removeClass('highlight-text');
+		});
+
+
+
 //=========== LANDING PAGE SCROLL DOWN EVENT  ==============
 		$('.communication-box, .scroll_down').on('click', function() {
 			$('body, html').css('height', 'auto');

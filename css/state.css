@@ -2,8 +2,11 @@
 /* ========================================  HOVER and SLIDE EFFECTS ===================*/
 
 .button-highlight {
+	background: #000 !important;
+	color: #fff;
+}
+.nav-highlight-bg {
 	background: #fff !important;
-	color: #000;
 }
 .nav-normal {
 	color: #fff;
@@ -37,6 +40,21 @@
 	-o-transition-delay: 300ms;
 	transition-delay: 300ms;
 }
+
+/*========================  Landing Popups ======================= */
+
+.highlight {
+	background: #fff;
+	padding: 12px 35px;
+}
+.highlight-text {
+	color: #000 !important;
+	font-weight: bold;
+}
+.popOut {
+	left: 0;
+}
+
 
 /*=============================  SLIDERS  ===============================*/
 
@@ -112,8 +130,11 @@
 	.content, .content-works {
 		width: 450px;
 	}
+	.content-works {
+		padding: 0 12% 0 5%;
+	}
 	.landing aside {
-		background-size: cover;
+
 	}
 	.landing p {
 		padding: 5px;
@@ -126,9 +147,11 @@
 	}
 	.slider6 {
 		width: 500px;
+
 	}
 	.slider4 {
 		width: 500px;
+		/*margin-left: -3%;*/
 	}
 	.slider6 figure img {
 		width: 14.66%;
@@ -161,9 +184,11 @@
 
 	.content {
 		width: 780px;
+		padding: 0 50px;
 	}
 	.content-works {
 		width: 80%;
+		padding: 0 50px 60% 50px;
 	}
 	h3 {
 		font-size: 1.6em;
@@ -186,7 +211,9 @@
 		max-height: 200px;
 		font-size: 1.5em;
 	}
-
+	.landing aside {
+		background-position: -112px -110px;
+	}
 	.landing p {
 		font-size: 1.3em;
 	}
@@ -216,7 +243,7 @@
 	}
 	.contact-button {
 		font-size: 1.6em;
-		box-sizing: border-box;
+		
 		width: 350px;
 	}
 
@@ -249,6 +276,9 @@
 
 @media only screen and (min-width : 1000px) {  /*===================================*/
 
+	.landing aside {
+		background-position: 0 -45px;
+	}
 	.landing p {
 		padding: 5px;
 		width: 50%;

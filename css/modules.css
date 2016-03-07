@@ -1,12 +1,12 @@
 /*=================================================  LANDING  =============*/
 
 .landing aside {
-	background-image: url('../img/com-mast-edit-1.jpg');
-	background-size: 570px;
+	background-image: url('../img/com-mast-5-edit.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	position: absolute;
-	background-position: 0 30px;
+	background-attachment: fixed;
+	background-position: -40px -230px;
 	top: 0;
 	z-index: -1;
 	width: 100%;
@@ -169,6 +169,11 @@
 .phone-container {
 	display: inline;
 	position: relative;
+	z-index: 20;
+}
+#phone-contact {
+	z-index: 20;
+	position: relative;
 }
 .contact-extras {
 	-webkit-transition-property: height;
@@ -207,10 +212,27 @@
 	border-left: 22px solid transparent;
 	border-right: 19px solid transparent;
 	border-top: 23px solid #000;
-	z-index: -1;
+	z-index: 0;
 }
 .map {
 	display: none;
 	text-align: center;
 	margin: -30px auto 0 auto;
+}
+.hover-line {
+	display: inline-block;
+	backface-visibility: hidden;
+	position: relative;
+}
+.hover-line::before {
+	content: "";
+	position: absolute;
+	z-index: 10;
+	left: 16%;
+	bottom: 0;
+	background: #000;
+	height: 4px;
+	width: 48px;
+	-webkit-transition-property: left, right;
+	-webkit-transition-duration: 300ms;
 }
