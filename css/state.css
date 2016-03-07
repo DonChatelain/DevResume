@@ -1,9 +1,12 @@
 
-/* ========================================  HOVER EFFECTS ===================*/
+/* ========================================  HOVER and SLIDE EFFECTS ===================*/
 
 .button-highlight {
+	background: #000 !important;
+	color: #fff;
+}
+.nav-highlight-bg {
 	background: #fff !important;
-	color: #000;
 }
 .nav-normal {
 	color: #fff;
@@ -14,7 +17,7 @@
 /*=====================================
  NAV SLIDING*/
 .slideRight {
-	transform: translateX(-130px);
+	transform: translateX(-180px);
 }
 
 .self-contain img:hover {
@@ -24,13 +27,40 @@
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
+.contact-slide {
+	height: 110px;
+}
+.arrow-slide {
+	top: 0;
+}
+.delayed {
+	-webkit-transition-delay: 300ms;
+	-moz-transition-delay: 300ms;
+	-ms-transition-delay: 300ms;
+	-o-transition-delay: 300ms;
+	transition-delay: 300ms;
+}
 
+/*========================  Landing Popups ======================= */
+
+.highlight {
+	background: #fff;
+	padding: 12px 35px;
+}
+.highlight-text {
+	color: #000 !important;
+	font-weight: bold;
+}
+.popOut {
+	left: 0;
+}
 
 
 /*=============================  SLIDERS  ===============================*/
 
 .slider6, .slider4 {
 	overflow: hidden;
+	margin: 0 auto;
 }
 .slider6 figure img {
 	width: 16.66%;
@@ -97,27 +127,221 @@
 /*==============================  MEDIA RULES ++++++++++++++++++++++++++++++ */
 
 @media only screen and (min-width: 480px) {
-
+	.content {
+		width: 450px;
+	}
 	.landing aside {
-		background-size: 150%;
+
 	}
 	.landing p {
-		padding: 20%;
+		padding: 5px;
+		width: 65%;
+		margin: 15% auto 10% auto;
+	}
+	.i-am-contain {
+		font-size: 1.2em;
+	}
+	.popup-wrapper {
+		font-size: 1.5em;
+	}
+	.head-img {
+		height: 200px;
+	}
+	.head-img-wrapper h2 {
+		font-size: 2em;
+	}
+	.principles {
+		width: 65%;
+		margin: 0 auto;
+	}
+	.works p {
+		padding: 0 5%;
+	}
+	.slider6 {
+		width: 500px;
+
+	}
+	.slider4 {
+		width: 500px;
+		/*margin-left: -3%;*/
 	}
 	.slider6 figure img {
 		width: 14.66%;
 		padding: 0 1% 0 1%;
-		float: left;
+/*		float: left;*/
 	}
 	.slider4 figure img {
 		width: 23%;
 		padding: 0 1% 0 1%;
-		float: left;
+/*		float: left;*/
+	}
+
+	.self-contain {
+		margin: 10px;
+	}
+	.about hr {
+		width: 70%;
+		margin: 10px auto;
+	}
+	.about ul {
+		width: 40%;
+		margin: 10px auto 30px auto;
+	}
+	.about p {
+		padding: 10px 8% 10px 8%;
 	}
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) {  /*===================================*/
 
+	.content {
+		width: 720px;
+		padding: 0 50px;
+	}
+	h3 {
+		font-size: 1.6em;
+	}
+	h4, h5 {
+		font-size: 1.3em;
+	}
+	section p {
+		font-size: 1.1em;
+	}
+	input {
+		height: 45px;
+		width: 350px;
+		font-size: 1.5em;
+	}
+	textarea {
+		width: 350px;
+		max-width: 350px;
+		height: 60px;
+		max-height: 200px;
+		font-size: 1.5em;
+	}
+	.landing aside {
+		background-position: -112px -110px;
+	}
+	.landing p {
+		font-size: 1.3em;
+	}
+	.communication-box h2 {
+		font-size: 3em;
+		font-weight: 100;
+		color: #fff;
+		cursor: pointer;
+		background: #000;
+		width: 360px;
+		margin: -15px auto 0 auto;
+		padding: 0 0 0 8px;
+	}
+	.hello {
+		padding: 100px 0 0 0;
+	}
+	.i-am-contain {
+		display: inline;
+		width: 90%;
+		font-size: 1.2em;
+		margin: 0 auto;
+	}
+	.hello h2 {
+		display: inline;
+		text-align: center;
+		word-spacing: 3px;
+	}
+	.contact-button {
+		font-size: 1.4em;
+		width: 161px;
+   		height: 62px;
+	}
+	.popup-wrapper {
+		font-size: 1.7em;
+	}
+	.highlight {
+	padding: 12px 60px;
+	}
 
+	.works p {
+		padding: 0 15%;
+	}
+
+	.slider4 {
+		/*width: 800px;*/
+	}
+	.self-contain {
+		width: 230px;
+		height: 230px;
+	}
+	.about p {
+		width: 55%;
+		float: left;
+		padding: 5px 5px 5px 5px;
+	}
+	.about ul, .about h4 {
+		width: 29%;
+		float: right;
+	}
+	.about ul {
+		font-size: 1.5em;
+	}
+	.map {
+		display: block;
+	}
+	footer {
+		clear: both;
+	}
+}
+
+@media only screen and (min-width : 1000px) {  /*===================================*/
+
+	.landing aside {
+		background-position: 0 -45px;
+	}
+	.landing p {
+		padding: 5px;
+		width: 50%;
+		margin: 15% auto 10% auto;
+	}
+	.i-am-contain {
+		font-size: 1.5em;
+	}
+
+	/*==================== WORKS ==============*/
+
+	.head-img {
+		height: 250px;
+	}
+	.works-wrapper {
+		width: 85%;
+	}
+	.works-flex-left {
+		width: 65%;
+		float: left;
+	}
+	.works-flex-right {
+		width: 30%;
+		padding: 0 10px 0 0;
+		float: right;
+	}
+
+	.principles {
+		/*width: 30%;*/
+		/*float: right;*/
+	}
+	.works {
+		/*width: 60%;*/
+		/*float: left;*/
+	}
+
+	.github {
+		/*width: 30%;*/
+		/*float: right;*/
+
+	}
+	.slider6 figure img {
+
+	}
+
+/* =======================*/
 
 }

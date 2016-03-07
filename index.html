@@ -2,7 +2,7 @@
 <head>
 	<title>Don Chatelain | Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link href='https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700|Muli:400,300' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/ >
 	<link href="./css/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="./css/base.css" rel="stylesheet" type="text/css" />
@@ -31,7 +31,7 @@
 
 	<section class="landing first">
 		<aside></aside>
-		<p>When you boil it all down, it is our ability of <span class="boxed">expression</span> and <span class="boxed">conveyance</span> that solely stands between our loneliness and the interconnectedness of humanity entire.</p>
+		<p>When it all boils down, <span class="boxed">articulation</span> and <span class="boxed">expression</span> are all that stand between loneliness and the interconnectedness of humanity entire.</p>
 		<h5 class="centered">Let's establish some</h5>
 		<div class="communication-box">
 			<h2>communication</h2>
@@ -45,23 +45,33 @@
 
 	<section class="hello">
 		<div class="i-am-contain">
-			<h2>Web Developer,</h2>
-			<h2>Interactive Designer,</h2>
-			<h2><span>and &nbsp;&nbsp; </span>Media Artist</h2>
+			<h2>Web Developer&nbsp;&nbsp;&nbsp;</h2>
+			<h2>Interactive Designer&nbsp;&nbsp;&nbsp;</h2>
+			<h2>Media Artist</h2>
 		</div>
 
-		<p class="first">Now let's build something monumental</p>
+		<h5 class="first">Now let's build something monumental</h5>
 
 		<form method="POST" action="./mail.php" class="centered last">
-			<input class="in-name" name="name" placeholder="Your Name (required)" required></input>
+			<input class="in-name" name="name" placeholder="Your Name*" required></input>
 			<input class="in-business" name="business" placeholder="Company Name"></input>
-			<input class="in-email" name="email" placeholder="Email (required)" required></input>
+			<input class="in-email" name="email" placeholder="Email*" required></input>
 			<input type="tel" class="in-phone" name="phone" placeholder="Phone"></input>
 			<input class="in-website" name="website" placeholder="Website"></input>
-			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
+			<textarea class="in-description" name="description" placeholder="A Brief Description of Your Project*" required></textarea>
+			<p>* Required Field</p>
 			<input type="submit" name="send" class="contact-button" value="CONTACT">
 		</form>
 	</section>
+
+	<div class="popup-wrapper last">
+		<div class="popup-left popOut">
+			<a href="./pages/works.html">Portfolio</a>
+		</div>
+		<div class="popup-right popOut">
+			<a href="./pages/about.html">About Me</a>
+		</div>
+	</div>
 
 	<footer>
 		<aside class="contact-footer">
