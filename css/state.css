@@ -55,6 +55,12 @@
 	left: 0;
 }
 
+/* ======================  PAUSED POPUP  =====================*/
+
+.pausedPopOut {
+	right: 0;
+}
+
 
 /*=============================  SLIDERS  ===============================*/
 
@@ -69,17 +75,20 @@
 .slider6 figure {
   position: relative;
   width: 600%;
-  max-height: 500px;
+  max-height: 400px;
   overflow: hidden;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 25s slidy6 infinite;
+  animation: slidy6 25s infinite alternate;
+  -webkit-filter: grayscale(50%);
+  cursor: pointer;
 }
 
-.slider6 figure:hover, .slider4 figure:hover {
-	animation-play-state:paused;
+.paused {
+	-webkit-filter: grayscale(0%) !important;
+	animation-play-state: paused !important;
 }
 
 .slider4 figure img {
@@ -95,7 +104,9 @@
 	left: 0;
 	text-align: left;
 	font-size: 0;
-	animation: 18s slidy4 infinite;
+	animation: slidy4 18s infinite alternate;
+	-webkit-filter: grayscale(50%);
+  	cursor: pointer;
 }
 
 @keyframes slidy6 {
@@ -131,7 +142,8 @@
 		width: 450px;
 	}
 	.landing aside {
-
+		background-size: 1000px;
+		background-position: 0 -120px;
 	}
 	.landing p {
 		padding: 5px;
@@ -151,7 +163,7 @@
 		font-size: 2em;
 	}
 	.principles {
-		width: 65%;
+		width: 300px;
 		margin: 0 auto;
 	}
 	.works p {
@@ -220,7 +232,8 @@
 		font-size: 1.5em;
 	}
 	.landing aside {
-		background-position: -112px -110px;
+		background-position: 0 0;
+		background-size: cover;
 	}
 	.landing p {
 		font-size: 1.3em;
@@ -313,6 +326,7 @@
 	}
 	.works-wrapper {
 		width: 85%;
+		height: 180%;
 	}
 	.works-flex-left {
 		width: 65%;
@@ -320,22 +334,18 @@
 	}
 	.works-flex-right {
 		width: 30%;
-		padding: 0 10px 0 0;
 		float: right;
 	}
 
 	.principles {
-		/*width: 30%;*/
-		/*float: right;*/
+		width: 100%;
 	}
 	.works {
-		/*width: 60%;*/
-		/*float: left;*/
+
 	}
 
 	.github {
-		/*width: 30%;*/
-		/*float: right;*/
+
 
 	}
 	.slider6 figure img {

@@ -2,11 +2,11 @@
 
 .landing aside {
 	background-image: url('../img/com-mast-5-edit.jpg');
-	background-size: cover;
+	background-size: 680px;
 	background-repeat: no-repeat;
 	position: absolute;
 	background-attachment: fixed;
-	background-position: -40px -230px;
+	/*background-position: -40px -230px;*/
 	top: 0;
 	z-index: -1;
 	width: 100%;
@@ -146,10 +146,25 @@
 .works-wrapper {
 	width: 100%;
 	margin: 0 auto;
-}
-.works-flex-left, .works-flex-right {
-	padding: 10px;
 	background: #fff;
+}
+
+.notify {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background: #000;
+	display: inline;
+	position: fixed;
+	padding: 0px 35px;
+	font-size: 1.2em;
+	z-index: 50;
+	top: 500px;
+	right: -200px;
+	-webkit-transition: right 300ms;
+}
+
+.works-flex-left, .works-flex-right {
+	padding: 10px 0;
 	width: 100%;
 }
 

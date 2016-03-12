@@ -3,7 +3,7 @@ $(function() {
 
 	var navOn = false;
 	var contactOn = false;
-	
+	var paused = false;
 
 	var main = {};
 
@@ -70,7 +70,34 @@ $(function() {
 
 
 
-	
+	    $('.slider6').on('click', function() {
+	    	if (!paused) {
+		    	$(this).children().addClass('paused');
+		    	$('.notify').addClass('pausedPopOut').fadeOut(1500, function() {
+		    		$(this).removeClass('pausedPopOut').delay(500).fadeIn('fast');
+		    	});
+		    	paused = true;
+		    } else if (paused) {
+		    	$(this).children().removeClass('paused');
+		    	paused = false;
+		    }
+	    });
+
+
+
+
+		$('.slider4').on('click', function() {
+	    	if (!paused) {
+		    	$(this).children().addClass('paused');
+		    	$('.notify').addClass('pausedPopOut').fadeOut(1500, function() {
+		    		$(this).removeClass('pausedPopOut').delay(500).fadeIn('fast');
+		    	});
+		    	paused = true;
+		    } else if (paused) {
+		    	$(this).children().removeClass('paused');
+		    	paused = false;
+		    }
+	    });
         
 
     		
