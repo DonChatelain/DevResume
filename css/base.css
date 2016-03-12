@@ -203,6 +203,11 @@ footer {
 .hidden {
 	display: none;
 }
+.larger {
+	font-size: 1.3em;
+	font-weight: bold;
+	white-space: nowrap;
+}
 .boxed {
 	background-color: #000;
 	color: #fff;

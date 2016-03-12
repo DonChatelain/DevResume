@@ -24,8 +24,9 @@
 	text-shadow: 1px 1px 3px #fff;
 }
 .landing h5 {
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', serif;
 	line-height: 0.20;
+	font-size: 1em;
 }
 .communication-box h2 {
 	font-size: 2em;
@@ -35,6 +36,7 @@
 	width: 242px;
 	margin: -15px auto 0 auto;
 	padding: 0 0 0 8px;
+	font-family: 'Lora';
 }
 
 .scroll_down {
@@ -78,6 +80,15 @@
 }
 .hello h5 {
 	font-weight: 100;
+	font-size: 1em;
+	font-family: 'Montserrat';
+}
+.hello span {
+	font-size: 1.3em;
+	font-family: 'Montserrat';
+	/*letter-spacing: 1px;*/
+	/*text-transform: uppercase;*/
+	/*font-weight: 700;*/
 }
 
 /* ======================================  ABOUT PAGE  ===========*/
@@ -155,15 +166,22 @@
 	position: fixed;
 	padding: 0px 35px;
 	font-size: 1.2em;
-	z-index: 50;
-	top: 500px;
-	right: -200px;
-	-webkit-transition: right 300ms;
+	z-index: 1000;
+	top: 300px;
+	left: -200px;
+	-webkit-transition: left 300ms;
+	-moz-transition: left 300ms;
+	-ms-transition: left 300ms;
+	-o-transition: left 300ms;
+	transition: left 300ms;
+	-webkit-backface-visibility:hidden;
+	backface-visibility: hidden;
 }
 
 .works-flex-left, .works-flex-right {
 	padding: 10px 0;
 	width: 100%;
+		border-left: 2px solid #efefef;
 }
 
 .principles  {
@@ -171,6 +189,7 @@
 }
 .principles ul {
 	margin: 0 auto;
+	width: 80%;
 }
 
 .more-info {
