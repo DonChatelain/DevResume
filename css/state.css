@@ -4,6 +4,7 @@
 .button-highlight {
 	background: #000 !important;
 	color: #fff;
+	border: 1px solid #fff;
 }
 .nav-highlight-bg {
 	background: #fff !important;
@@ -220,7 +221,7 @@
 		font-size: 1.1em;
 	}
 	input {
-		height: 45px;
+		height: 35px;
 		width: 350px;
 		font-size: 1.5em;
 	}
@@ -240,13 +241,8 @@
 	}
 	.communication-box h2 {
 		font-size: 3em;
-		font-weight: 100;
-		color: #fff;
-		cursor: pointer;
 		background: #000;
 		width: 360px;
-		margin: -15px auto 0 auto;
-		padding: 0 0 0 8px;
 	}
 	.hello {
 		padding: 100px 0 0 0;

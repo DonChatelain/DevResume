@@ -131,26 +131,31 @@ form {
 	font-family: 'Montserrat';
 }
 input, textarea {
-	width: 220px;
+	width: 250px;
 	padding-bottom: 5px;
-	max-height: 150px;
+	max-height: 190px;
 	color: #000;
 	display: block;
-	margin: 15px auto;
+	margin: 10px auto;
+	height: 30px;
 }
 textarea {
-	width: 218px;
-	max-width: 220px;
-	margin: 15px auto;
+	width: 248px;
+	height: 80px;
+	max-width: 248px;
+	margin: 10px auto;
+	min-width: 248px;
+	resize: none;
 }
 .contact-button {
 /*	font-family: 'Lora', serif;*/
-	background-color: #383838;
-	border: 2px solid #484848;
+	background-color: #000;
+	border: 2px solid #565656;
 	box-sizing: border-box;
 	width: 135px;
+	height: 60px;
 	padding: 15px 10px;
-	color: #fff;
+	color: #B3B3B3;
 	letter-spacing: 1px;
 	font-size: 1.2em;
 	font-weight: bold;

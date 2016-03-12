@@ -47,15 +47,16 @@
 
       <h3>Say Hello</h3>
 
-      <form method="POST" action="../mail.php">
-        <input class="in-name" name="name" placeholder="Your Name (required)" required></input>
-        <input class="in-business" name="business" placeholder="Company Name"></input>
-        <input class="in-email" name="email" placeholder="Email (required)" required></input>
-        <input class="in-phone" name="phone" placeholder="Phone"></input>
-        <input class="in-website" name="website" placeholder="Website"></input>
-        <textarea class="in-description" name="description" placeholder="A Brief Description of Your Project (required)" required></textarea>
-        <input type="submit" name="send" class="contact-button" value="CONTACT">
-      </form>
+      <form method="POST" action="../mail.php" class="centered">
+      <input class="in-name" name="name" placeholder="Your Name*" required></input>
+      <input class="in-business" name="business" placeholder="Company Name"></input>
+      <input class="in-email" name="email" placeholder="Email*" required></input>
+      <input type="tel" class="in-phone" name="phone" placeholder="Phone"></input>
+      <input class="in-website" name="website" placeholder="Website"></input>
+      <textarea class="in-description" name="description" placeholder="A Brief Description of Your Project*" required></textarea>
+      <p>* Required Field</p>
+      <input type="submit" name="send" class="contact-button" value="CONTACT">
+    </form>
       <br /><br /><br />
     </section>
 

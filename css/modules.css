@@ -31,7 +31,6 @@
 	font-size: 2em;
 	font-weight: 100;
 	color: #fff;
-	cursor: pointer;
 	background: #000;
 	width: 242px;
 	margin: -15px auto 0 auto;
@@ -46,7 +45,6 @@
   text-align: center;
   z-index: 10;
   margin: 0px auto 25px auto;
-  cursor: pointer;
 }
 .scroll_down p {
   font-family: sans-serif;
